@@ -14,15 +14,10 @@
 	When adding curl -iL two codes are returned 301 and 418
 	status code returned for http://www.google.com/teapot? is 418
 7. What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
-	In both cases I get an error
-	curl: (60) SSL certificate problem: unable to get local issuer certificate
-	More details here: https://curl.haxx.se/docs/sslcerts.html
+	The key difference that I see is that the request method for the first command used GET while the request method for the second
+	command used POST
 
-	curl failed to verify the legitimacy of the server and therefore could not
-	establish a secure connection to it. To learn more about this situation and
-	how to fix it, please visit the web page mentioned above.
-	I assume the fault is on my end but I am unsure of what I am doing incorrectly
-	first command used: curl -i https://webdocs.cs.ualberta.ca/~hindle1/1.py
-	second command used: curl -i -X POST -d "X=Y" https://webdocs.cs.ualberta.ca/~hindle1/1.py
+	This method is useful for using a command other than GET to interact with something on the web.
+
 8. What is the raw URL to your Python script on GitHub?
 	https://raw.githubusercontent.com/Chase-Warwick/CMPUT404-Lab-1/master/Page_Getter.py	 
