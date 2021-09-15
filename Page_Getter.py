@@ -7,8 +7,5 @@ source_code = request.text
 
 print(source_code)
 
-source_file = open("source_code.py", 'w')
-source_file.write(source_code)
-
 request.close()
-source_file.close()
+
