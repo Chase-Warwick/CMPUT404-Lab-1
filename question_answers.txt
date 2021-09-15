@@ -1,0 +1,28 @@
+1. What is your GitHub URL?
+	https://github.com/Chase-Warwick
+2. What version is the requests library installed on the system?
+	2.22.0
+3. What version is the requests library installed in the virtualenv
+	2.26.0
+4. What is the difference between the virtual environment and the not virtual environment python?
+	One has a more recent installation of the requests module
+5. What status code is returned for http://google.com ? What URL must you visit to get a 200 status code?
+	301 is the status code which was returned from http://google.com
+	To get a 200 status code one must use the URL https://google.com
+6. What status code is returned for http://google.com/teapot? Is it the one returned by curl -i or curl -iL? What happens when you curl http://www.google.com/teapot?
+	status code returned for http://google.com/teapot is 301
+	When adding curl -iL two codes are returned 301 and 418
+	status code returned for http://www.google.com/teapot? is 418
+7. What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
+	In both cases I get an error
+	curl: (60) SSL certificate problem: unable to get local issuer certificate
+	More details here: https://curl.haxx.se/docs/sslcerts.html
+
+	curl failed to verify the legitimacy of the server and therefore could not
+	establish a secure connection to it. To learn more about this situation and
+	how to fix it, please visit the web page mentioned above.
+	I assume the fault is on my end but I am unsure of what I am doing incorrectly
+	first command used: curl -i https://webdocs.cs.ualberta.ca/~hindle1/1.py
+	second command used: curl -i -X POST -d "X=Y" https://webdocs.cs.ualberta.ca/~hindle1/1.py
+8. What is the raw URL to your Python script on GitHub?
+	https://raw.githubusercontent.com/Chase-Warwick/CMPUT404-Lab-1/master/Page_Getter.py	 
